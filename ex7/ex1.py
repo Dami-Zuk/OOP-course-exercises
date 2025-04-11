@@ -23,7 +23,7 @@ The class should also contain the following methods:
 If the password argument given to either of these methods is wrong, the methods should raise a
 ValueError exception. 
 If the password is correct, each method should call the relevant method in the parent class. Do not
-copy and paste anything from the MagicPotion class."""
+copy and paste anything from the MagicPotion class. """
 
 class SecretMagicPotion(MagicPotion):
     def __init__(self, name, password):

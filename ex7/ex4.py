@@ -77,7 +77,7 @@ class OrderBook:
     def status_of_programmer(self, worker: str):
         finished_tasks = [task for task in self._orders if task._worker == worker and task.is_finished()]
         unfinished_tasks = [task for task in self._orders if task._worker == worker and not task.is_finished()]
-        
+
         finished_count = len(finished_tasks)
         finished_hours = sum(task._workload for task in finished_tasks)
 
